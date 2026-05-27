@@ -1,0 +1,74 @@
+export default function IraqStorePage() { return ( <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4"> <div className="bg-white shadow-2xl rounded-3xl max-w-md w-full overflow-hidden"> <div className="bg-black text-white text-center p-6"> <h1 className="text-3xl font-bold">متجري الإلكتروني</h1> <p className="text-sm mt-2 text-gray-300"> اطلب المنتج بسهولة </p> </div>
+
+<div className="p-5">
+      <div className="mb-5">
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop"
+          alt="product"
+          className="w-full h-64 object-cover rounded-2xl"
+        />
+      </div>
+
+      <div className="mb-5 text-center">
+        <h2 className="text-2xl font-bold">اسم المنتج</h2>
+        <p className="text-gray-600 mt-2">
+          ضع هنا وصف قصير للمنتج الذي تبيعه.
+        </p>
+        <p className="text-3xl font-bold mt-3 text-green-600">
+          25$
+        </p>
+      </div>
+
+      <form className="space-y-4">
+        <div>
+          <label className="block mb-1 font-semibold">الاسم الكامل</label>
+          <input
+            type="text"
+            placeholder="اكتب اسمك"
+            className="w-full border rounded-xl p-3 outline-none focus:ring-2 focus:ring-black"
+          />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">رقم الهاتف</label>
+          <input
+            type="tel"
+            placeholder="07xxxxxxxx"
+            className="w-full border rounded-xl p-3 outline-none focus:ring-2 focus:ring-black"
+          />
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">المحافظة في العراق</label>
+          <select className="w-full border rounded-xl p-3 outline-none focus:ring-2 focus:ring-black">
+            <option>بغداد</option>
+            <option>البصرة</option>
+            <option>أربيل</option>
+            <option>نينوى</option>
+            <option>النجف</option>
+            <option>كربلاء</option>
+            <option>دهوك</option>
+            <option>السليمانية</option>
+          </select>
+        </div>
+
+        <div>
+          <label className="block mb-1 font-semibold">العنوان الكامل</label>
+          <textarea
+            placeholder="اكتب عنوانك بالتفصيل"
+            className="w-full border rounded-xl p-3 h-28 outline-none focus:ring-2 focus:ring-black"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          className="w-full bg-black text-white py-3 rounded-2xl text-lg font-bold hover:scale-105 duration-300"
+        >
+          تأكيد الطلب
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+); }
